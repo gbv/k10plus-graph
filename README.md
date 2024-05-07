@@ -8,13 +8,13 @@ Dumps of subject indexing in K10plus catalog are published yearly to quarterly. 
 
 The data is reduced to data fields used for subject indexing in K10plus catalog and limited to records with at least one library holding. Records without any subject indexing are omitted. See K10plus format documentation and file README.md of the data publication for details.
 
-For creating the tsv file, see https://github.com/gbv/k10plus-subjects
-
-The file can be downloaded from https://doi.org/10.5281/zenodo.7016625
-
 ## tsv2pg/tsv2pg-rs
 ### Summary
 A simple converter tool to convert a [tsv](https://en.wikipedia.org/wiki/Tab-separated_values) input to the [pg](https://pg-format.github.io/specification) graph format.
+
+For creating the tsv file, see https://github.com/gbv/k10plus-subjects
+
+The tsv file can be downloaded from https://doi.org/10.5281/zenodo.7016625
 
 ### Structure
 The tsv file must not have a header and must have the following columns in the rigth order:
@@ -44,4 +44,44 @@ For faster conversion it is recommend to use tsv2pg-rs
 ```sh
 zcat kxp-subjects.tsv.gz | cargo run tsv2pg-rs --release > kxp-subjects.pg
 ```
+## jskos2pg
+### Summary
+A simple converter tool to convert a [jskos ndjson](https://gbv.github.io/jskos/jskos.html) input to the [pg](https://pg-format.github.io/specification) graph format.
 
+For downloading the data, see http://api.dante.gbv.de/voc/bk
+
+### Structure
+The input must be in the ndjson format. The following keys are necessary:
+```json
+{
+  "uri": "http://uri.gbv.de/terminology/bk/44.76",
+  "inScheme": [
+    {
+      "uri": "http://uri.gbv.de/terminology/bk/",
+      "prefLabel": {
+        "de": "Basisklassifikation",
+        "en": "Basisclassification"
+      },
+      "notation": [
+        "bk"
+      ]
+    }
+  ],
+  "notation": [
+    "44.76"
+  ],
+  "prefLabel": {
+    "de": "Ernährungsstörungen, Mangelkrankheiten"
+  },
+  "narrower": [
+    {
+      "uri": "http://uri.gbv.de/terminology/bk/86.79",
+    },
+  ]
+}
+```
+
+### Usage
+```sh
+cat bk__default.jskos.ndjson | ./jskos2pg.py > bk.jskos.pg
+```
