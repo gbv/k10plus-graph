@@ -4,15 +4,11 @@ import sys
 
 
 def createTitleNode(ppn):
-    return f"{ppn} :Title"
-
-
-def createSubjectNode(sym, id):
-    return f"'{sym}:{id}' :Concept id:'{id}'"
+    return f"{ppn} :title"
 
 
 def createSubjectEdge(ppn, sym, id):
-    return f"{ppn} -> '{sym}:{id}' :Subject"
+    return f"{ppn} -> 'http://uri.gbv.de/terminology/{sym}/{id}' :subject"
 
 
 uniquePpn = []
@@ -22,5 +18,4 @@ for line in sys.stdin.readlines():
     if ppn not in uniquePpn:
         print(createTitleNode(ppn))
         uniquePpn.append(ppn)
-    print(createSubjectNode(sym, id))
     print(createSubjectEdge(ppn, sym, id))
