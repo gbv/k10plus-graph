@@ -12,7 +12,7 @@ For creating the tsv file, see https://github.com/gbv/k10plus-subjects
 
 The file can be downloaded from https://doi.org/10.5281/zenodo.7016625
 
-## tsv2pg
+## tsv2pg/tsv2pg-rs
 ### Summary
 A simple converter tool to convert a [tsv](https://en.wikipedia.org/wiki/Tab-separated_values) input to the [pg](https://pg-format.github.io/specification) graph format.
 
@@ -31,9 +31,17 @@ The usage of single Quotes in the columns breaks the program.
 ```
 
 ### Usage
-```bash
-zcat kxp-subjects.tsv.gz | ./tsv2pg.py
+```sh
+zcat kxp-subjects.tsv.gz | ./tsv2pg.py > kxp-subjects.pg
 ```
 > [!NOTE]
 > Using zcat to decompress the file to stdin
+
+### tsv2pg-rs
+For faster conversion it is recommend to use tsv2pg-rs
+
+#### Usage
+```sh
+zcat kxp-subjects.tsv.gz | cargo run tsv2pg-rs --release > kxp-subjects.pg
+```
 

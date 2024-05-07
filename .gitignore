@@ -1,1 +1,4 @@
 /kxp-subjects.tsv
+/tsv2pg-rs/target
+/target
+/kxp-subjects.tsv.gz
