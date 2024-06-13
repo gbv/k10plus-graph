@@ -1,0 +1,39 @@
+project:
+  type: book
+  output-dir: ../docs
+  #pre-render:
+  #  - make images
+  render:
+    - "!*.md"
+
+book:
+  title: "K10plus Knowledge Graph"
+  #subtitle: "Handbuch"
+  repo-url: https://github.com/gbv/k10plus-graph
+  language: de
+  repo-subdir: manual
+  repo-actions:
+    - source
+  chapters:
+    - index.qmd
+  page-footer: 
+    right: 
+      - text: Datenschutz
+        href: https://www.gbv.de/datenschutz
+      - text: Impressum
+        href: https://www.gbv.de/impressum
+      - icon: github
+        href: https://github.com/gbv/k10plus-graph
+
+tbl-cap-location: bottom
+number-sections: false
+number-depth: 1
+
+format:
+  html:
+    theme: cosmo
+    link-external-icon: true
+    syntax-definitions:
+     - pg.xml
+    #include-before-body: js/syntax.html
+

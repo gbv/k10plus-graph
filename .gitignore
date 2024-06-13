@@ -3,3 +3,15 @@
 /target
 /bk__default.jskos.ndjson
 /kxp-subjects.tsv.gz
+
+# local libraries
+node_modules/
+__pycache__/
+venv/
+
+# temporary files
+*.mmd
+
+# quarto output
+docs/
+.quarto

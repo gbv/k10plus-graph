@@ -1,0 +1,7 @@
+---
+title: Einleitung
+lang: de
+---
+
+An dieser Stelle entsteht ein Handbuch für die Verwaltung und Nutzung des **K10plus Knowledge Graph**.
+

@@ -1,4 +1,6 @@
-# k10plus-graph
+# K10plus Graph
+
+*This is work in progress!*
 
 ## Dependencies
 - [Python3](https://www.python.org/)
