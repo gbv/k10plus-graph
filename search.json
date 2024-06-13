@@ -4,7 +4,17 @@
     "href": "index.html",
     "title": "K10plus Knowledge Graph",
     "section": "",
-    "text": "An dieser Stelle entsteht ein Handbuch für die Verwaltung und Nutzung des K10plus Knowledge Graph.",
+    "text": "Datenmodell",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#datenmodell",
+    "href": "index.html#datenmodell",
+    "title": "K10plus Knowledge Graph",
+    "section": "",
+    "text": "# Knoten\n\n## Publikation\nTitle :title\n  ppn: string\n\n## Redirects (umgelenkte PPNs)\nRedirect :redirect\n  from: string # PPN\n  ppn: string\n\n## Konzept (Schlagwort)\nConcept :concept\n  # zusätzliche Label für die einzelnen Vokabulare (:bk :rvk ...)\n  notation: string\n\n## Mapping\nMapping :mapping\n  uri: string\n  # TODO: relation als label (:broaderMatch :narrowMatch) oder als property?\n\n# Kanten\n\nTitle -&gt; Concept :subject       # Sacherschließung\n\nConcept -&gt; Concept :broader     # Hierarchie\n\nMapping -&gt; Concept :from \nMapping -&gt; Concept :to",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Einleitung</span>"
     ]
