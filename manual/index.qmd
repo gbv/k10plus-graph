@@ -5,3 +5,41 @@ lang: de
 
 An dieser Stelle entsteht ein Handbuch für die Verwaltung und Nutzung des **K10plus Knowledge Graph**.
 
+Der Knowledge Graph ist als Labeled Property Graph umgesetzt (siehe [Einführung
+in Property Graphen](https://jakobib.github.io/pgraphen2024/])). Eine Variante
+in RDF ist für später angedacht.
+
+
+## Datenmodell
+
+~~~pg
+# Knoten
+
+## Publikation
+Title :title
+  ppn: string
+
+## Redirects (umgelenkte PPNs)
+Redirect :redirect
+  from: string # PPN
+  ppn: string
+
+## Konzept (Schlagwort)
+Concept :concept
+  # zusätzliche Label für die einzelnen Vokabulare (:bk :rvk ...)
+  notation: string
+
+## Mapping
+Mapping :mapping
+  uri: string
+  # TODO: relation als label (:broaderMatch :narrowMatch) oder als property?
+
+# Kanten
+
+Title -> Concept :subject       # Sacherschließung
+
+Concept -> Concept :broader     # Hierarchie
+
+Mapping -> Concept :from 
+Mapping -> Concept :to 
+~~~
