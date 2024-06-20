@@ -1,0 +1,260 @@
+"010000011" :title ppn:"010000011"
+"010000011" -> "http://uri.gbv.de/terminology/bk/58.55" :subject
+"01000002X" :title ppn:"01000002X"
+"01000002X" -> "http://uri.gbv.de/terminology/bk/42.13" :subject
+"010000038" :title ppn:"010000038"
+"010000038" -> "http://uri.gbv.de/terminology/bk/01.29" :subject
+"010000054" :title ppn:"010000054"
+"010000054" -> "http://rvk.uni-regensburg.de/nt/BE 8050" :subject
+"010000070" :title ppn:"010000070"
+"010000070" -> "http://uri.gbv.de/terminology/bk/18.10" :subject
+"010000127" :title ppn:"010000127"
+"010000127" -> "http://uri.gbv.de/terminology/bk/77.79" :subject
+"010000178" :title ppn:"010000178"
+"010000178" -> "http://uri.gbv.de/terminology/bk/21.88" :subject
+"010000178" -> "http://rvk.uni-regensburg.de/nt/LH 78580" :subject
+"010000194" :title ppn:"010000194"
+"010000194" -> "http://uri.gbv.de/terminology/bk/42.94" :subject
+"010000194" -> "http://uri.gbv.de/terminology/bk/43.50" :subject
+"01000033X" :title ppn:"01000033X"
+"01000033X" -> "http://uri.gbv.de/terminology/bk/86.77" :subject
+"01000033X" -> "http://rvk.uni-regensburg.de/nt/PF 500" :subject
+"010000437" :title ppn:"010000437"
+"010000437" -> "http://uri.gbv.de/terminology/bk/46.14" :subject
+"010000771" :title ppn:"010000771"
+"010000771" -> "http://rvk.uni-regensburg.de/nt/DX 4400" :subject
+"010000798" :title ppn:"010000798"
+"010000798" -> "http://uri.gbv.de/terminology/bk/11.36" :subject
+"010000828" :title ppn:"010000828"
+"010000828" -> "http://uri.gbv.de/terminology/bk/11.36" :subject
+"010000828" -> "http://rvk.uni-regensburg.de/nt/BC 7000" :subject
+"010000828" -> "http://rvk.uni-regensburg.de/nt/BC 7200" :subject
+"010000836" :title ppn:"010000836"
+"010000836" -> "http://rvk.uni-regensburg.de/nt/BG 9931" :subject
+"010000844" :title ppn:"010000844"
+"010000844" -> "http://uri.gbv.de/terminology/bk/86.41" :subject
+"010000844" -> "http://uri.gbv.de/terminology/bk/71.31" :subject
+"010000844" -> "http://uri.gbv.de/terminology/bk/71.25" :subject
+"010000844" -> "http://rvk.uni-regensburg.de/nt/MS 2870" :subject
+"010000844" -> "http://rvk.uni-regensburg.de/nt/PH 8820" :subject
+"010000844" -> "http://rvk.uni-regensburg.de/nt/CR 6000" :subject
+"010001018" :title ppn:"010001018"
+"010001018" -> "http://rvk.uni-regensburg.de/nt/LS 48200" :subject
+"010001204" :title ppn:"010001204"
+"010001204" -> "http://uri.gbv.de/terminology/bk/02.02" :subject
+"010001204" -> "http://uri.gbv.de/terminology/bk/71.12" :subject
+"010001204" -> "http://rvk.uni-regensburg.de/nt/AK 25000" :subject
+"010001204" -> "http://rvk.uni-regensburg.de/nt/MS 1480" :subject
+"010001212" :title ppn:"010001212"
+"010001212" -> "http://uri.gbv.de/terminology/bk/08.45" :subject
+"010001239" :title ppn:"010001239"
+"010001239" -> "http://uri.gbv.de/terminology/bk/05.34" :subject
+"010001247" :title ppn:"010001247"
+"010001247" -> "http://uri.gbv.de/terminology/bk/86.29" :subject
+"010001247" -> "http://uri.gbv.de/terminology/bk/83.65" :subject
+"01000131X" :title ppn:"01000131X"
+"01000131X" -> "http://rvk.uni-regensburg.de/nt/GK 4531" :subject
+"010001328" :title ppn:"010001328"
+"010001328" -> "http://uri.gbv.de/terminology/bk/74.20" :subject
+"010001328" -> "http://uri.gbv.de/terminology/bk/89.30" :subject
+"010001328" -> "http://rvk.uni-regensburg.de/nt/NB 9310" :subject
+"010001360" :title ppn:"010001360"
+"010001360" -> "http://uri.gbv.de/terminology/bk/15.40" :subject
+"010001417" :title ppn:"010001417"
+"010001417" -> "http://uri.gbv.de/terminology/bk/76.04" :subject
+"010001492" :title ppn:"010001492"
+"010001492" -> "http://uri.gbv.de/terminology/bk/71.31" :subject
+"010001492" -> "http://rvk.uni-regensburg.de/nt/MS 3300" :subject
+"010001492" -> "http://rvk.uni-regensburg.de/nt/LB 44600" :subject
+"010001492" -> "http://rvk.uni-regensburg.de/nt/MS 3000" :subject
+"http://rvk.uni-regensburg.de/nt/BE 8050" -> "http://rvk.uni-regensburg.de/nt/BE 8050 - BE 8059" :broader
+"http://rvk.uni-regensburg.de/nt/BE 8050" :rvk :concept notation:"BE 8050"
+"http://rvk.uni-regensburg.de/nt/LH 78580" -> "http://rvk.uni-regensburg.de/nt/LH 78580 - LH 78588" :broader
+"http://rvk.uni-regensburg.de/nt/LH 78580" :rvk :concept notation:"LH 78580"
+"http://rvk.uni-regensburg.de/nt/PF 500" -> "http://rvk.uni-regensburg.de/nt/PF 500 - PF 570" :broader
+"http://rvk.uni-regensburg.de/nt/PF 500" :rvk :concept notation:"PF 500"
+"http://rvk.uni-regensburg.de/nt/DX 4400" -> "http://rvk.uni-regensburg.de/nt/DX 4400 - DX 4401" :broader
+"http://rvk.uni-regensburg.de/nt/DX 4400" :rvk :concept notation:"DX 4400"
+"http://rvk.uni-regensburg.de/nt/BC 7000" -> "http://rvk.uni-regensburg.de/nt/BC 7000 - BC 7200" :broader
+"http://rvk.uni-regensburg.de/nt/BC 7000" :rvk :concept notation:"BC 7000"
+"http://rvk.uni-regensburg.de/nt/BC 7200" -> "http://rvk.uni-regensburg.de/nt/BC 7000 - BC 7200" :broader
+"http://rvk.uni-regensburg.de/nt/BC 7200" :rvk :concept notation:"BC 7200"
+"http://rvk.uni-regensburg.de/nt/BG 9931" -> "http://rvk.uni-regensburg.de/nt/BG 9930 - BG 9935" :broader
+"http://rvk.uni-regensburg.de/nt/BG 9931" :rvk :concept notation:"BG 9931"
+"http://rvk.uni-regensburg.de/nt/MS 2870" -> "http://rvk.uni-regensburg.de/nt/MS 2800 - MS 3250" :broader
+"http://rvk.uni-regensburg.de/nt/MS 2870" :rvk :concept notation:"MS 2870"
+"http://rvk.uni-regensburg.de/nt/PH 8820" -> "http://rvk.uni-regensburg.de/nt/PH 8800 - PH 8820" :broader
+"http://rvk.uni-regensburg.de/nt/PH 8820" :rvk :concept notation:"PH 8820"
+"http://rvk.uni-regensburg.de/nt/CR 6000" -> "http://rvk.uni-regensburg.de/nt/CR" :broader
+"http://rvk.uni-regensburg.de/nt/CR 6000" :rvk :concept notation:"CR 6000"
+"http://rvk.uni-regensburg.de/nt/LS 48200" -> "http://rvk.uni-regensburg.de/nt/LS 48000 - LS 48900" :broader
+"http://rvk.uni-regensburg.de/nt/LS 48200" :rvk :concept notation:"LS 48200"
+"http://rvk.uni-regensburg.de/nt/AK 25000" -> "http://rvk.uni-regensburg.de/nt/AK 25000 - AK 25400" :broader
+"http://rvk.uni-regensburg.de/nt/AK 25000" :rvk :concept notation:"AK 25000"
+"http://rvk.uni-regensburg.de/nt/MS 1480" -> "http://rvk.uni-regensburg.de/nt/MS 1300 - MS 1480" :broader
+"http://rvk.uni-regensburg.de/nt/MS 1480" :rvk :concept notation:"MS 1480"
+"http://rvk.uni-regensburg.de/nt/GK 4531" -> "http://rvk.uni-regensburg.de/nt/GK 4531 - GK 4581" :broader
+"http://rvk.uni-regensburg.de/nt/GK 4531" :rvk :concept notation:"GK 4531"
+"http://rvk.uni-regensburg.de/nt/NB 9310" -> "http://rvk.uni-regensburg.de/nt/NB 9100 - NB 9500" :broader
+"http://rvk.uni-regensburg.de/nt/NB 9310" :rvk :concept notation:"NB 9310"
+"http://rvk.uni-regensburg.de/nt/MS 3300" -> "http://rvk.uni-regensburg.de/nt/MS 3300 - MS 3800" :broader
+"http://rvk.uni-regensburg.de/nt/MS 3300" :rvk :concept notation:"MS 3300"
+"http://rvk.uni-regensburg.de/nt/LB 44600" -> "http://rvk.uni-regensburg.de/nt/LB 44600 - LB 44610" :broader
+"http://rvk.uni-regensburg.de/nt/LB 44600" :rvk :concept notation:"LB 44600"
+"http://rvk.uni-regensburg.de/nt/MS 3000" -> "http://rvk.uni-regensburg.de/nt/MS 3000 - MS 3250" :broader
+"http://rvk.uni-regensburg.de/nt/MS 3000" :rvk :concept notation:"MS 3000"
+"http://uri.gbv.de/terminology/bk/58.55" -> "http://uri.gbv.de/terminology/bk/58.50" :broader
+"http://uri.gbv.de/terminology/bk/58.55" :bk :concept notation:"58.55"
+"http://uri.gbv.de/terminology/bk/42.13" -> "http://uri.gbv.de/terminology/bk/42.00" :broader
+"http://uri.gbv.de/terminology/bk/42.13" :bk :concept notation:"42.13"
+"http://uri.gbv.de/terminology/bk/01.29" -> "http://uri.gbv.de/terminology/bk/01.20" :broader
+"http://uri.gbv.de/terminology/bk/01.29" :bk :concept notation:"01.29"
+"http://uri.gbv.de/terminology/bk/18.10" -> "http://uri.gbv.de/terminology/bk/18.08" :broader
+"http://uri.gbv.de/terminology/bk/18.10" :bk :concept notation:"18.10"
+"http://uri.gbv.de/terminology/bk/77.79" -> "http://uri.gbv.de/terminology/bk/77.72" :broader
+"http://uri.gbv.de/terminology/bk/77.79" :bk :concept notation:"77.79"
+"http://uri.gbv.de/terminology/bk/21.88" -> "http://uri.gbv.de/terminology/bk/21.80" :broader
+"http://uri.gbv.de/terminology/bk/21.88" :bk :concept notation:"21.88"
+"http://uri.gbv.de/terminology/bk/42.94" -> "http://uri.gbv.de/terminology/bk/42.92" :broader
+"http://uri.gbv.de/terminology/bk/42.94" :bk :concept notation:"42.94"
+"http://uri.gbv.de/terminology/bk/43.65" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.63" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.61" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.66" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.68" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.64" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.62" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.69" -> "http://uri.gbv.de/terminology/bk/43.50" :broader
+"http://uri.gbv.de/terminology/bk/43.50" -> "http://uri.gbv.de/terminology/bk/43.00" :broader
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50"
+"http://uri.gbv.de/terminology/bk/86.77" -> "http://uri.gbv.de/terminology/bk/86.74" :broader
+"http://uri.gbv.de/terminology/bk/86.77" :bk :concept notation:"86.77"
+"http://uri.gbv.de/terminology/bk/46.14" -> "http://uri.gbv.de/terminology/bk/46.00" :broader
+"http://uri.gbv.de/terminology/bk/46.14" :bk :concept notation:"46.14"
+"http://uri.gbv.de/terminology/bk/11.36" -> "http://uri.gbv.de/terminology/bk/11.30" :broader
+"http://uri.gbv.de/terminology/bk/11.36" -> "http://uri.gbv.de/terminology/bk/11.30" :broader
+"http://uri.gbv.de/terminology/bk/11.36" :bk :concept notation:"11.36"
+"http://uri.gbv.de/terminology/bk/11.36" :bk :concept notation:"11.36"
+"http://uri.gbv.de/terminology/bk/86.41" -> "http://uri.gbv.de/terminology/bk/86.33" :broader
+"http://uri.gbv.de/terminology/bk/86.41" :bk :concept notation:"86.41"
+"http://uri.gbv.de/terminology/bk/71.33" -> "http://uri.gbv.de/terminology/bk/71.31" :broader
+"http://uri.gbv.de/terminology/bk/71.33" -> "http://uri.gbv.de/terminology/bk/71.31" :broader
+"http://uri.gbv.de/terminology/bk/71.32" -> "http://uri.gbv.de/terminology/bk/71.31" :broader
+"http://uri.gbv.de/terminology/bk/71.32" -> "http://uri.gbv.de/terminology/bk/71.31" :broader
+"http://uri.gbv.de/terminology/bk/71.31" -> "http://uri.gbv.de/terminology/bk/71.30" :broader
+"http://uri.gbv.de/terminology/bk/71.31" -> "http://uri.gbv.de/terminology/bk/71.30" :broader
+"http://uri.gbv.de/terminology/bk/71.31" :bk :concept notation:"71.31"
+"http://uri.gbv.de/terminology/bk/71.31" :bk :concept notation:"71.31"
+"http://uri.gbv.de/terminology/bk/71.25" -> "http://uri.gbv.de/terminology/bk/71.20" :broader
+"http://uri.gbv.de/terminology/bk/71.25" :bk :concept notation:"71.25"
+"http://uri.gbv.de/terminology/bk/02.02" -> "http://uri.gbv.de/terminology/bk/02.00" :broader
+"http://uri.gbv.de/terminology/bk/02.02" :bk :concept notation:"02.02"
+"http://uri.gbv.de/terminology/bk/71.12" -> "http://uri.gbv.de/terminology/bk/71.10" :broader
+"http://uri.gbv.de/terminology/bk/71.12" :bk :concept notation:"71.12"
+"http://uri.gbv.de/terminology/bk/08.45" -> "http://uri.gbv.de/terminology/bk/08.30" :broader
+"http://uri.gbv.de/terminology/bk/08.45" :bk :concept notation:"08.45"
+"http://uri.gbv.de/terminology/bk/05.34" -> "http://uri.gbv.de/terminology/bk/05.30" :broader
+"http://uri.gbv.de/terminology/bk/05.34" :bk :concept notation:"05.34"
+"http://uri.gbv.de/terminology/bk/05.36" -> "http://uri.gbv.de/terminology/bk/05.34" :broader
+"http://uri.gbv.de/terminology/bk/05.35" -> "http://uri.gbv.de/terminology/bk/05.34" :broader
+"http://uri.gbv.de/terminology/bk/86.29" -> "http://uri.gbv.de/terminology/bk/86.18" :broader
+"http://uri.gbv.de/terminology/bk/86.29" :bk :concept notation:"86.29"
+"http://uri.gbv.de/terminology/bk/83.65" -> "http://uri.gbv.de/terminology/bk/83.60" :broader
+"http://uri.gbv.de/terminology/bk/83.65" :bk :concept notation:"83.65"
+"http://uri.gbv.de/terminology/bk/74.20" -> "http://uri.gbv.de/terminology/bk/74.19" :broader
+"http://uri.gbv.de/terminology/bk/74.20" :bk :concept notation:"74.20"
+"http://uri.gbv.de/terminology/bk/89.30" -> "http://uri.gbv.de/terminology/bk/89.00" :broader
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30"
+"http://uri.gbv.de/terminology/bk/89.35" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/89.33" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/89.34" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/89.32" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/89.31" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/89.36" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/89.37" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/89.39" -> "http://uri.gbv.de/terminology/bk/89.30" :broader
+"http://uri.gbv.de/terminology/bk/15.40" -> "http://uri.gbv.de/terminology/bk/15.00" :broader
+"http://uri.gbv.de/terminology/bk/15.40" :bk :concept notation:"15.40"
+"http://uri.gbv.de/terminology/bk/15.42" -> "http://uri.gbv.de/terminology/bk/15.40" :broader
+"http://uri.gbv.de/terminology/bk/15.41" -> "http://uri.gbv.de/terminology/bk/15.40" :broader
+"http://uri.gbv.de/terminology/bk/15.43" -> "http://uri.gbv.de/terminology/bk/15.40" :broader
+"http://uri.gbv.de/terminology/bk/15.45" -> "http://uri.gbv.de/terminology/bk/15.40" :broader
+"http://uri.gbv.de/terminology/bk/76.04" -> "http://uri.gbv.de/terminology/bk/76.00" :broader
+"http://uri.gbv.de/terminology/bk/76.04" :bk :concept notation:"76.04"
+"http://rvk.uni-regensburg.de/nt/BE 8050 - BE 8059" :rvk :concept notation:"BE 8050 - BE 8059"
+"http://rvk.uni-regensburg.de/nt/LH 78580 - LH 78588" :rvk :concept notation:"LH 78580 - LH 78588"
+"http://rvk.uni-regensburg.de/nt/PF 500 - PF 570" :rvk :concept notation:"PF 500 - PF 570"
+"http://rvk.uni-regensburg.de/nt/DX 4400 - DX 4401" :rvk :concept notation:"DX 4400 - DX 4401"
+"http://rvk.uni-regensburg.de/nt/BC 7000 - BC 7200" :rvk :concept notation:"BC 7000 - BC 7200"
+"http://rvk.uni-regensburg.de/nt/BC 7000 - BC 7200" :rvk :concept notation:"BC 7000 - BC 7200"
+"http://rvk.uni-regensburg.de/nt/BG 9930 - BG 9935" :rvk :concept notation:"BG 9930 - BG 9935"
+"http://rvk.uni-regensburg.de/nt/MS 2800 - MS 3250" :rvk :concept notation:"MS 2800 - MS 3250"
+"http://rvk.uni-regensburg.de/nt/PH 8800 - PH 8820" :rvk :concept notation:"PH 8800 - PH 8820"
+"http://rvk.uni-regensburg.de/nt/CR" :rvk :concept notation:"CR"
+"http://rvk.uni-regensburg.de/nt/LS 48000 - LS 48900" :rvk :concept notation:"LS 48000 - LS 48900"
+"http://rvk.uni-regensburg.de/nt/AK 25000 - AK 25400" :rvk :concept notation:"AK 25000 - AK 25400"
+"http://rvk.uni-regensburg.de/nt/MS 1300 - MS 1480" :rvk :concept notation:"MS 1300 - MS 1480"
+"http://rvk.uni-regensburg.de/nt/GK 4531 - GK 4581" :rvk :concept notation:"GK 4531 - GK 4581"
+"http://rvk.uni-regensburg.de/nt/NB 9100 - NB 9500" :rvk :concept notation:"NB 9100 - NB 9500"
+"http://rvk.uni-regensburg.de/nt/MS 3300 - MS 3800" :rvk :concept notation:"MS 3300 - MS 3800"
+"http://rvk.uni-regensburg.de/nt/LB 44600 - LB 44610" :rvk :concept notation:"LB 44600 - LB 44610"
+"http://rvk.uni-regensburg.de/nt/MS 3000 - MS 3250" :rvk :concept notation:"MS 3000 - MS 3250"
+"http://uri.gbv.de/terminology/bk/58.50" :bk :concept notation:"58.50" 
+"http://uri.gbv.de/terminology/bk/42.00" :bk :concept notation:"42.00" 
+"http://uri.gbv.de/terminology/bk/01.20" :bk :concept notation:"01.20" 
+"http://uri.gbv.de/terminology/bk/18.08" :bk :concept notation:"18.08" 
+"http://uri.gbv.de/terminology/bk/77.72" :bk :concept notation:"77.72" 
+"http://uri.gbv.de/terminology/bk/21.80" :bk :concept notation:"21.80" 
+"http://uri.gbv.de/terminology/bk/42.92" :bk :concept notation:"42.92" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.50" :bk :concept notation:"43.50" 
+"http://uri.gbv.de/terminology/bk/43.00" :bk :concept notation:"43.00" 
+"http://uri.gbv.de/terminology/bk/86.74" :bk :concept notation:"86.74" 
+"http://uri.gbv.de/terminology/bk/46.00" :bk :concept notation:"46.00" 
+"http://uri.gbv.de/terminology/bk/11.30" :bk :concept notation:"11.30" 
+"http://uri.gbv.de/terminology/bk/11.30" :bk :concept notation:"11.30" 
+"http://uri.gbv.de/terminology/bk/86.33" :bk :concept notation:"86.33" 
+"http://uri.gbv.de/terminology/bk/71.31" :bk :concept notation:"71.31" 
+"http://uri.gbv.de/terminology/bk/71.31" :bk :concept notation:"71.31" 
+"http://uri.gbv.de/terminology/bk/71.31" :bk :concept notation:"71.31" 
+"http://uri.gbv.de/terminology/bk/71.31" :bk :concept notation:"71.31" 
+"http://uri.gbv.de/terminology/bk/71.30" :bk :concept notation:"71.30" 
+"http://uri.gbv.de/terminology/bk/71.30" :bk :concept notation:"71.30" 
+"http://uri.gbv.de/terminology/bk/71.20" :bk :concept notation:"71.20" 
+"http://uri.gbv.de/terminology/bk/02.00" :bk :concept notation:"02.00" 
+"http://uri.gbv.de/terminology/bk/71.10" :bk :concept notation:"71.10" 
+"http://uri.gbv.de/terminology/bk/08.30" :bk :concept notation:"08.30" 
+"http://uri.gbv.de/terminology/bk/05.30" :bk :concept notation:"05.30" 
+"http://uri.gbv.de/terminology/bk/05.34" :bk :concept notation:"05.34" 
+"http://uri.gbv.de/terminology/bk/05.34" :bk :concept notation:"05.34" 
+"http://uri.gbv.de/terminology/bk/86.18" :bk :concept notation:"86.18" 
+"http://uri.gbv.de/terminology/bk/83.60" :bk :concept notation:"83.60" 
+"http://uri.gbv.de/terminology/bk/74.19" :bk :concept notation:"74.19" 
+"http://uri.gbv.de/terminology/bk/89.00" :bk :concept notation:"89.00" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/89.30" :bk :concept notation:"89.30" 
+"http://uri.gbv.de/terminology/bk/15.00" :bk :concept notation:"15.00" 
+"http://uri.gbv.de/terminology/bk/15.40" :bk :concept notation:"15.40" 
+"http://uri.gbv.de/terminology/bk/15.40" :bk :concept notation:"15.40" 
+"http://uri.gbv.de/terminology/bk/15.40" :bk :concept notation:"15.40" 
+"http://uri.gbv.de/terminology/bk/15.40" :bk :concept notation:"15.40" 
+"http://uri.gbv.de/terminology/bk/76.00" :bk :concept notation:"76.00" 
+"http://rvk.uni-regensburg.de/nt/MS 3000 - MS 3250" -> "http://uri.gbv.de/terminology/bk/71.31" :mapping relation:"narrowMatch" uri:"https://coli-conc.gbv.de/api/mappings/1c799777-7013-4b2b-b9e0-5cbd0bfdd949"
+"http://rvk.uni-regensburg.de/nt/MS 2870" -> "http://uri.gbv.de/terminology/bk/71.25" :mapping relation:"narrowMatch" uri:"https://coli-conc.gbv.de/api/mappings/ee4fa5c6-2e8f-4073-9294-e4e4d14d4cbc"
+"http://rvk.uni-regensburg.de/nt/MS 2870" -> "http://uri.gbv.de/terminology/bk/71.31" :mapping relation:"narrowMatch" uri:"https://coli-conc.gbv.de/api/mappings/907f3e38-f1c9-4ff8-a738-dc4e3697f8bb"
+"http://rvk.uni-regensburg.de/nt/MS 1480" -> "http://uri.gbv.de/terminology/bk/71.12" :mapping relation:"narrowMatch" uri:"https://coli-conc.gbv.de/api/mappings/3549a019-a695-4378-b692-dc0fe8d4ca02"
+"http://rvk.uni-regensburg.de/nt/PF 500" -> "http://uri.gbv.de/terminology/bk/86.77" :mapping relation:"narrowMatch" uri:"https://coli-conc.gbv.de/api/mappings/1c41482c-82cb-48ad-92be-ecfacc1da552"
+"http://rvk.uni-regensburg.de/nt/PF 500 - PF 570" -> "http://uri.gbv.de/terminology/bk/86.77" :mapping relation:"mappingRelation" uri:"https://coli-conc.gbv.de/api/mappings/34919417-4e18-5055-ac55-376938f1486b"
+"http://rvk.uni-regensburg.de/nt/PF 500" -> "http://uri.gbv.de/terminology/bk/86.77" :mapping relation:"mappingRelation" uri:"https://coli-conc.gbv.de/api/mappings/8578e82f-f5d4-5eb5-9cc5-0bb4c1880926"
