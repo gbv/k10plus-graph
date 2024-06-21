@@ -17,11 +17,11 @@ bk__default.jskos.ndjson:
 sdnb-concepts.ndjson:
 	wget https://raw.githubusercontent.com/gbv/jskos-data/master/sdnb/sdnb-concepts.ndjson
 
-kxp-subjects:
-	curl -L "https://zenodo.org/api/records/7016625" | jq -r '.files[] | select(.key | endswith(".tsv.gz")) | .links.self' | xargs wget
+kxp-subjects.tsv.gz:
+	curl -L "https://zenodo.org/api/records/7016625" | jq -r '.files[] | select(.key | endswith(".tsv.gz")) | .links.self' | xargs -I {} wget -O kxp-subjects.tsv.gz {}
 
-kxp-subjects.pg: content
-	zcat content | cargo run tsv2pg-rs --release > kxp-subjects.pg
+kxp-subjects.pg: kxp-subjects.tsv.gz
+	zcat kxp-subjects.tsv.gz | cargo run tsv2pg-rs --release > kxp-subjects.pg
 
 bk_broader.pg: bk__default.jskos.ndjson
 	python3 jskos-scheme-to-pg.py bk bk__default.jskos.ndjson > bk_broader.pg

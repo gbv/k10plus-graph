@@ -12,6 +12,7 @@ venv/
 # temporary files
 *.mmd
 import/
+neo4jdata/
 
 # quarto output
 docs/
