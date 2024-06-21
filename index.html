@@ -160,7 +160,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#nutzung" id="toc-nutzung" class="nav-link" data-scroll-target="#nutzung">Nutzung</a>
   <ul class="collapse">
   <li><a href="#erstelle-.pg-und-.csv-dateien" id="toc-erstelle-.pg-und-.csv-dateien" class="nav-link" data-scroll-target="#erstelle-.pg-und-.csv-dateien">Erstelle .pg und .csv Dateien</a></li>
-  <li><a href="#führe-die-dateien-in-neo4j" id="toc-führe-die-dateien-in-neo4j" class="nav-link" data-scroll-target="#führe-die-dateien-in-neo4j">Führe die Dateien in Neo4j</a></li>
   </ul></li>
   <li><a href="#datenmodell" id="toc-datenmodell" class="nav-link" data-scroll-target="#datenmodell">Datenmodell</a>
   <ul class="collapse">
@@ -205,12 +204,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="erstelle-.pg-und-.csv-dateien" class="level3">
 <h3 class="anchored" data-anchor-id="erstelle-.pg-und-.csv-dateien">Erstelle .pg und .csv Dateien</h3>
 <p>pgraphs muss wie in <code>https://github.com/pg-format/pgraphs/</code> beschrieben installiert sein. Mit <code>make</code> wird ein Property-Graph mit erstellt und daraus CSV-Dateien. Das erste mal kann dies ein paar Minuten dauern, da kxp-subjects sehr groß ist.<br>
-In some <code>some_subjects.pg</code> und den daraus entstandenen CSV-Dateien sind nur die ersten 4000000 Zeilen aus <code>kxp-subjects.pg</code>, da pgraphs nicht mit größeren Dateien umgehen kann.</p>
-</section>
-<section id="führe-die-dateien-in-neo4j" class="level3">
-<h3 class="anchored" data-anchor-id="führe-die-dateien-in-neo4j">Führe die Dateien in Neo4j</h3>
-<p>Erstelle <code>neo4j/import</code> in <code>pgraphs</code> und verschiebe die CSV-Dateien in den Ordner.<br>
-Mit <code>./import.sh subjects</code> in <code>pgraphs/neo4j</code> wird ein Neo4j docker erstellt mit den Inhalten der CSV-Dateien. Neo4j ist unter <code>http://localhost:7474/browser/</code> zu finden, Username und Password müssen beim verbinden leer sein.</p>
+In some <code>some_subjects.pg</code> und den daraus entstandenen CSV-Dateien sind nur die ersten 4000000 Zeilen aus <code>kxp-subjects.pg</code>, da pgraphs nicht mit größeren Dateien umgehen kann. Mit den CSV-Dateien wird ein Labeled Property Graph in Neo4j erstellt.</p>
 </section>
 </section>
 <section id="datenmodell" class="level2">
