@@ -1,10 +1,10 @@
-default: downloads kxp-subjects.pg some-subjects.pg some-subjects.csv
+default: downloads kxp-subjects.pg some-subjects.pg import/subjects.nodes.csv
 
 docs:
 	quarto render manual
 
 
-csv: some-subjects.pg some-subjects.csv
+csv: some-subjects.pg import/subjects.nodes.csv
 
 downloads: rvko_xml.zip bk__default.jskos.ndjson sdnb-concepts.ndjson kxp-subjects
 
@@ -20,7 +20,7 @@ sdnb-concepts.ndjson:
 kxp-subjects:
 	curl -L "https://zenodo.org/api/records/7016625" | jq -r '.files[] | select(.key | endswith(".tsv.gz")) | .links.self' | xargs wget
 
-kxp-subjects.pg:
+kxp-subjects.pg: content
 	zcat content | cargo run tsv2pg-rs --release > kxp-subjects.pg
 
 bk_broader.pg: bk__default.jskos.ndjson
@@ -29,7 +29,7 @@ bk_broader.pg: bk__default.jskos.ndjson
 rvk_broader.pg: rvko_xml.zip
 	unzip -p rvko_xml.zip rvko_2024_1.xml | python3 rvk_broader_xml.py > rvk_broader.pg
 
-some-subjects.pg:
+some-subjects.pg: kxp-subjects.pg bk__default.jskos.ndjson sdnb-concepts.ndjson rvko_xml.zip
 	head -n 4000000 kxp-subjects.pg > some_subjects.pg && \
 	python3 jskos-scheme-to-pg.py bk bk__default.jskos.ndjson >> some_subjects.pg && \
 	python3 jskos-scheme-to-pg.py sdnb sdnb-concepts.ndjson >> some_subjects.pg && \
@@ -39,4 +39,4 @@ some-subjects.pg:
 import/subjects.nodes.csv: some_subjects.pg
 	mkdir -p import
 	pgraph $< -t csv import/subjects
-	
+	./import.sh subjects
