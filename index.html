@@ -156,7 +156,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#datenmodell" id="toc-datenmodell" class="nav-link active" data-scroll-target="#datenmodell">Datenmodell</a></li>
+  <li><a href="#dependencies" id="toc-dependencies" class="nav-link active" data-scroll-target="#dependencies">Dependencies</a></li>
+  <li><a href="#nutzung" id="toc-nutzung" class="nav-link" data-scroll-target="#nutzung">Nutzung</a>
+  <ul class="collapse">
+  <li><a href="#erstelle-.pg-und-.csv-dateien" id="toc-erstelle-.pg-und-.csv-dateien" class="nav-link" data-scroll-target="#erstelle-.pg-und-.csv-dateien">Erstelle .pg und .csv Dateien</a></li>
+  <li><a href="#führe-die-dateien-in-neo4j" id="toc-führe-die-dateien-in-neo4j" class="nav-link" data-scroll-target="#führe-die-dateien-in-neo4j">Führe die Dateien in Neo4j</a></li>
+  </ul></li>
+  <li><a href="#datenmodell" id="toc-datenmodell" class="nav-link" data-scroll-target="#datenmodell">Datenmodell</a>
+  <ul class="collapse">
+  <li><a href="#nutzen-des-graphen" id="toc-nutzen-des-graphen" class="nav-link" data-scroll-target="#nutzen-des-graphen">Nutzen des Graphen</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gbv/k10plus-graph/blob/main/manual/index.qmd" class="toc-action"><i class="bi bi-github"></i>Quellcode anzeigen</a></li></ul></div></nav>
     </div>
@@ -183,7 +192,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>An dieser Stelle entsteht ein Handbuch für die Verwaltung und Nutzung des <strong>K10plus Knowledge Graph</strong>.</p>
-<p>Der Knowledge Graph ist als Labeled Property Graph umgesetzt (siehe <a href="https://jakobib.github.io/pgraphen2024/%5D">Einführung in Property Graphen</a>). Eine Variante in RDF ist für später angedacht.</p>
+<p>Der Knowledge Graph ist als Labeled Property Graph umgesetzt (siehe <a href="https://jakobib.github.io/pgraphen2024/">Einführung in Property Graphen</a>). Eine Variante in RDF ist für später angedacht.</p>
+<section id="dependencies" class="level2">
+<h2 class="anchored" data-anchor-id="dependencies">Dependencies</h2>
+<ul>
+<li>pip install requests</li>
+<li>https://github.com/pg-format/pgraphs/</li>
+</ul>
+</section>
+<section id="nutzung" class="level2">
+<h2 class="anchored" data-anchor-id="nutzung">Nutzung</h2>
+<section id="erstelle-.pg-und-.csv-dateien" class="level3">
+<h3 class="anchored" data-anchor-id="erstelle-.pg-und-.csv-dateien">Erstelle .pg und .csv Dateien</h3>
+<p>pgraphs muss wie in <code>https://github.com/pg-format/pgraphs/</code> beschrieben installiert sein. Mit <code>make</code> wird ein Property-Graph mit erstellt und daraus CSV-Dateien. Das erste mal kann dies ein paar Minuten dauern, da kxp-subjects sehr groß ist.<br>
+In some <code>some_subjects.pg</code> und den daraus entstandenen CSV-Dateien sind nur die ersten 4000000 Zeilen aus <code>kxp-subjects.pg</code>, da pgraphs nicht mit größeren Dateien umgehen kann.</p>
+</section>
+<section id="führe-die-dateien-in-neo4j" class="level3">
+<h3 class="anchored" data-anchor-id="führe-die-dateien-in-neo4j">Führe die Dateien in Neo4j</h3>
+<p>Erstelle <code>neo4j/import</code> in <code>pgraphs</code> und verschiebe die CSV-Dateien in den Ordner.<br>
+Mit <code>./import.sh subjects</code> in <code>pgraphs/neo4j</code> wird ein Neo4j docker erstellt mit den Inhalten der CSV-Dateien. Neo4j ist unter <code>http://localhost:7474/browser/</code> zu finden, Username und Password müssen beim verbinden leer sein.</p>
+</section>
+</section>
 <section id="datenmodell" class="level2">
 <h2 class="anchored" data-anchor-id="datenmodell">Datenmodell</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode pg code-with-copy"><code class="sourceCode pg"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Knoten</span></span>
@@ -196,27 +225,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Redirect <span class="dt">:redirect</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">from:</span> <span class="st">string</span> <span class="co"># PPN</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ppn:</span> <span class="st">string</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">## Konzept (Schlagwort)</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Concept <span class="dt">:concept</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">  # zusätzliche Label für die einzelnen Vokabulare (:bk :rvk ...)</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">notation:</span> <span class="st">string</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">## Mapping</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Mapping <span class="dt">:mapping</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">uri:</span> <span class="st">string</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  # TODO: relation als label (:broaderMatch :narrowMatch) oder als property?</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">TODO:</span> <span class="st">existiert</span> <span class="er">noch</span> <span class="er">nicht</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">## Konzept (Schlagwort)</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Concept <span class="dt">:concept</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="er">zusätzliche</span> <span class="er">Label</span> <span class="er">für</span> <span class="er">die</span> <span class="er">einzelnen</span> <span class="er">Vokabulare</span> <span class="fu">(:</span><span class="st">bk</span> <span class="er">:rvk</span> <span class="er">...)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">notation:</span> <span class="st">string</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Kanten</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Title <span class="cf">-&gt;</span> Concept <span class="dt">:subject</span>       <span class="co"># Sacherschließung</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Kanten</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>Concept <span class="cf">-&gt;</span> Concept <span class="dt">:broader</span>     <span class="co"># Hierarchie</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Title <span class="cf">-&gt;</span> Concept <span class="dt">:subject</span>       <span class="co"># Sacherschließung</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Concept <span class="cf">-&gt;</span> Concept <span class="dt">:mapping</span>     <span class="co"># Sacherschließung mit Cocoda</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Concept <span class="cf">-&gt;</span> Concept <span class="dt">:broader</span>     <span class="co"># Hierarchie</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Mapping <span class="cf">-&gt;</span> Concept <span class="dt">:from</span> </span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Mapping <span class="cf">-&gt;</span> Concept <span class="dt">:to</span> </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">## Mapping</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Mapping <span class="dt">:mapping</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">uri:</span> <span class="st">string</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relation:</span> <span class="st">string</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="nutzen-des-graphen" class="level3">
+<h3 class="anchored" data-anchor-id="nutzen-des-graphen">Nutzen des Graphen</h3>
+<p>In dem Graph sind Sachgebiete von der PPN auf die Notation gerichtet.</p>
+<p>Durch Cypher Befehle kann man in Neo4j jetzt Informationen erhalten. Z. B. welche RVK-Notationen haben ein “exactMatch” oder “narrowMatch” mit BK-Notationen, die mit PPNs verbunden werden können <code>MATCH p=((r:rvk)-[m]-&gt;(b:bk)&lt;-[]-(t:title)) WHERE m.relation = 'exactMatch' or m.relation = 'narrowMatch' RETURN p</code>. Mit so einer Frage ließen sich PPNs finden, die noch mit RVK angereichert werden können.</p>
+<p><code>MATCH (b:bk) RETURN b und MATCH (r:rvk) RETURN r</code> geben jeweils die komplette Klassifikation und ihre Hierarchie zurück.</p>
+<p>Mit <code>MATCH p=(t:title)-[]-&gt;() WHERE t.ppn = "010000844" RETURN p</code> lassen sich alle Sachgebiete einer bestimmten PPN ausgeben, in diesem Fall 010000844.</p>
+<p>Andersrum lässt sich mit <code>MATCH p=()-[r:subject]-&gt;(r:rvk) WHERE r.notation = "MS 2870" RETURN p</code> finden, wie viel ein Sachgebiet in K10plus genutzt wird.</p>
+<p>Mit <code>MATCH p=((r:rvk)-[]-&gt;(b:bk)) WHERE b.notation = "17.03" RETURN p</code> lassen sich alle Mappings eine Notation anzeigen.</p>
+<p>CYPHER queries for each query type:</p>
+<p>occurrences:<br>
+<code>MATCH (t:title)-[]-&gt;(n:?) WHERE n.notation = "?" RETURN count(t) AS freq</code></p>
+<p>coOccurrences:<br>
+<code>MATCH (t:title)-[]-&gt;(n:?) WHERE n.notation = "?" MATCH (t)-[]-&gt;(m:?) RETURN head(LABELS(m)), m.notation, count(m) AS freq</code></p>
+<p>subjects:<br>
+<code>MATCH (t:title)-[]-&gt;(n) WHERE t.ppn = "?" RETURN head(LABELS(n)), n.notation</code></p>
+<p>records:<br>
+<code>MATCH (t:title)-[]-&gt;(n:?) WHERE n.notation = "?" RETURN t.ppn LIMIT ?</code></p>
+<p>CYPHER queries with their respective sample query:</p>
+<p>occurrences of RVK DG 9000<br>
+<code>MATCH (t:title)-[]-&gt;(r:rvk) WHERE r.notation = "DG 9000" RETURN count(t)</code></p>
+<p>co-occurrences of RVK DG 9000 in BK<br>
+<code>MATCH (t:title)-[]-&gt;(r:rvk) WHERE r.notation = "DG 9000" MATCH (t)-[]-&gt;(b:bk) RETURN head(LABELS(b)), b.notation, count(b)</code></p>
+<p>co-occurrences of RVK DG 9000 in all vocabularies<br>
+<code>MATCH (t:title)-[]-&gt;(r:rvk) WHERE r.notation = "DG 9000" MATCH (t)-[]-&gt;(n) WHERE not LABELS(n) = ["rvk"] RETURN head(LABELS(n)), n.notation, count(n)</code></p>
+<p>co-occurrences of RVK DG 9000 in all vocabularies (including RVK)<br>
+<code>MATCH (t:title)-[]-&gt;(r:rvk) WHERE r.notation = "DG 9000" MATCH (t)-[]-&gt;(n) RETURN head(LABELS(n)), n.notation, count(n)</code></p>
+<p>subjects of a record (all vocabularies)<br>
+<code>MATCH (t:title)-[]-&gt;(n) WHERE t.ppn = "012401471" RETURN head(LABELS(n)), n.notation</code></p>
+<p>subjects of a record (selected vocabulary)<br>
+<code>MATCH (t:title)-[]-&gt;(r:rvk) WHERE t.ppn = "012401471" RETURN head(LABELS(r)), r.notation</code></p>
+<p>records of a subject<br>
+<code>MATCH (t:title)-[]-&gt;(b:bk) WHERE b.notation = "20.04" RETURN t.ppn</code></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
