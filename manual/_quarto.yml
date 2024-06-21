@@ -5,7 +5,6 @@ project:
   #  - make images
   render:
     - "!*.md"
-
 book:
   title: "K10plus Knowledge Graph"
   #subtitle: "Handbuch"
@@ -16,6 +15,7 @@ book:
     - source
   chapters:
     - index.qmd
+    - queries.qmd
   page-footer: 
     right: 
       - text: Datenschutz
@@ -35,5 +35,4 @@ format:
     link-external-icon: true
     syntax-definitions:
      - pg.xml
-    #include-before-body: js/syntax.html
-
+    include-before-body: js/syntax.html
