@@ -36,6 +36,7 @@ some-subjects.pg:
 	python3 mappings_to_pg.py -s 20049,533,18785 >> some_subjects.pg && \
 	unzip -p rvko_xml.zip | python3 rvk_broader_xml.py >> some_subjects.pg
 
-some-subjects.csv: some_subjects.pg
-	pgraph some_subjects.pg -t csv subjects
+import/subjects.nodes.csv: some_subjects.pg
+	mkdir -p import
+	pgraph $< -t csv import/subjects
 	
